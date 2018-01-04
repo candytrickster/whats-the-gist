@@ -47,6 +47,7 @@ export class TypingTextComponent implements OnInit {
 	backwardsTypingCallback(that) {
 		let total_length = that.typewriter_text.length;
 		let current_length = that.typewriter_display.length;
+		let element = document.getElementById('msg');
 
 		if (current_length > 0) {
 			that.typewriter_display = that.typewriter_text.substring(0, (current_length-1));
@@ -54,12 +55,15 @@ export class TypingTextComponent implements OnInit {
 		} else {
 			if(that.typewriter_text == that.messages[that.typewriter_index].angryMsg) {
 				that.typewriter_text = that.messages[that.typewriter_index].proMsg;
+				msg.classList.add("professionalText");
 			} else if(that.typewriter_index < that.messages.length - 1) {
 				that.typewriter_index += 1;
 				that.typewriter_text = that.messages[that.typewriter_index].angryMsg;
+				msg.classList.remove("professionalText");
 			} else {
 				that.typewriter_index = 0;
 				that.typewriter_text = that.messages[that.typewriter_index].angryMsg;
+				msg.classList.remove("professionalText");
 			}
 			that.typingCallback(that);
 		}
