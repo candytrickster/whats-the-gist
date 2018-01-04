@@ -51,7 +51,7 @@ export class TypingTextComponent implements OnInit {
 
 		if (current_length > 0) {
 			that.typewriter_display = that.typewriter_text.substring(0, (current_length-1));
-			setTimeout(that.backwardsTypingCallback, 100, that);
+			setTimeout(that.backwardsTypingCallback, 50, that);
 		} else {
 			if(that.typewriter_text == that.messages[that.typewriter_index].angryMsg) {
 				that.typewriter_text = that.messages[that.typewriter_index].proMsg;

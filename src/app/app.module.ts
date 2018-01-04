@@ -9,13 +9,19 @@ import { LandingService } from './landing.service';
 import { WorkService } from './work.service';
 import { SchoolService } from './school.service';
 import { FreelanceService } from './freelance.service';
+import { WorkComponent } from './work/work.component';
+import { SchoolComponent } from './school/school.component';
+import { FreelanceComponent } from './freelance/freelance.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
-    TypingTextComponent
+    TypingTextComponent,
+    WorkComponent,
+    SchoolComponent,
+    FreelanceComponent
   ],
   imports: [
     BrowserModule
