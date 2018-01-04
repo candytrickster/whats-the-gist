@@ -4,17 +4,23 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
+import { TypingTextComponent } from './typing-text/typing-text.component';
+import { LandingService } from './landing.service';
+import { WorkService } from './work.service';
+import { SchoolService } from './school.service';
+import { FreelanceService } from './freelance.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent
+    LandingComponent,
+    TypingTextComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [LandingService, WorkService, SchoolService, FreelanceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

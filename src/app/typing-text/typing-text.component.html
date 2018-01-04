@@ -1,0 +1,10 @@
+<p class="angryText">
+  {{typewriter_display }}
+</p>
+<ul class="heroes">
+  <li *ngFor="let message of messages">
+    <a>
+      <span class="badge">{{message.id}}</span> {{message.angryMsg}}
+    </a>
+  </li>
+</ul>
