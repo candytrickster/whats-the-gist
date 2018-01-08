@@ -13,6 +13,10 @@
 	src: url("../../assets/fonts/JosefinSans-Bold.ttf"); 
 }
 
+body {
+	min-width:350px;
+}
+
 .angryText {
 	font-family: "Indelible";
 }

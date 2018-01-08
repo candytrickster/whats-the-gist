@@ -1,0 +1,65 @@
+@font-face { 
+	font-family: "Indelible"; 
+	src: url("../../assets/fonts/Indelible.otf"); 
+}
+
+@font-face { 
+	font-family: "JosefinSans"; 
+	src: url("../../assets/fonts/JosefinSans-Regular.ttf"); 
+}
+
+@font-face { 
+	font-family: "JosefinSansBold"; 
+	src: url("../../assets/fonts/JosefinSans-Bold.ttf"); 
+}
+
+.angryText {
+	font-family: "Indelible";
+}
+
+.professionalText {
+	font-family: "JosefinSans";
+}
+
+.professionalTextBold {
+	font-family: "JosefinSansBold";
+}
+
+#header {
+	border-bottom: 1px solid #000;
+	margin-top: -15px;
+}
+
+#title {
+	font-size: 32px;
+	border: 1px solid #000;
+	min-width: 33%;
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -37px;
+	text-align: center;
+	height: 63px;
+	align-content: center;
+	background-color: #fff;
+}
+
+#title p {
+	margin-top: 16px;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	font-family: "JosefinSans";
+	display: inline;
+}
+
+nav ul li:hover {
+
+}
+
+
+
