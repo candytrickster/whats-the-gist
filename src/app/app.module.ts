@@ -12,6 +12,8 @@ import { FreelanceService } from './freelance.service';
 import { WorkComponent } from './work/work.component';
 import { SchoolComponent } from './school/school.component';
 import { FreelanceComponent } from './freelance/freelance.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { FreelanceComponent } from './freelance/freelance.component';
     TypingTextComponent,
     WorkComponent,
     SchoolComponent,
-    FreelanceComponent
+    FreelanceComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule

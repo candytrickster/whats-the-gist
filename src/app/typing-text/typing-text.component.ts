@@ -35,10 +35,10 @@ export class TypingTextComponent implements OnInit {
 		let current_length = that.typewriter_display.length;
 		if (current_length < total_length) {
 			that.typewriter_display += that.typewriter_text[current_length];
-			setTimeout(that.typingCallback, 100, that);
+			setTimeout(that.typingCallback,75, that);
 		} else {
 			// that.typewriter_display = "";
-			sleep(1000);
+			that.sleep(1000);
 			that.backwardsTypingCallback(that);
 		}
 		
@@ -51,19 +51,19 @@ export class TypingTextComponent implements OnInit {
 
 		if (current_length > 0) {
 			that.typewriter_display = that.typewriter_text.substring(0, (current_length-1));
-			setTimeout(that.backwardsTypingCallback, 50, that);
+			setTimeout(that.backwardsTypingCallback, 40, that);
 		} else {
 			if(that.typewriter_text == that.messages[that.typewriter_index].angryMsg) {
 				that.typewriter_text = that.messages[that.typewriter_index].proMsg;
-				msg.classList.add("professionalText");
+				element.classList.add("professionalText");
 			} else if(that.typewriter_index < that.messages.length - 1) {
 				that.typewriter_index += 1;
 				that.typewriter_text = that.messages[that.typewriter_index].angryMsg;
-				msg.classList.remove("professionalText");
+				element.classList.remove("professionalText");
 			} else {
 				that.typewriter_index = 0;
 				that.typewriter_text = that.messages[that.typewriter_index].angryMsg;
-				msg.classList.remove("professionalText");
+				element.classList.remove("professionalText");
 			}
 			that.typingCallback(that);
 		}
@@ -71,7 +71,7 @@ export class TypingTextComponent implements OnInit {
 
 	}
 
-	function sleep(miliseconds) {
+	sleep(miliseconds) {
 		var currentTime = new Date().getTime();
 		while (currentTime + miliseconds >= new Date().getTime()) {
 		}
