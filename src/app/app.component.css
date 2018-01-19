@@ -1,9 +1,30 @@
-body {
-  background-color:#ce3635;
-  text-align: center;
-  color:#000;
-  padding-top:10em;
-  min-width:350px;
+@font-face { 
+	font-family: "Indelible"; 
+	src: url("../assets/fonts/Indelible.otf"); 
 }
 
-* { color:#000; text-decoration: none;}
+@font-face { 
+	font-family: "JosefinSans"; 
+	src: url("../assets/fonts/JosefinSans-Regular.ttf"); 
+}
+
+@font-face { 
+	font-family: "JosefinSansBold"; 
+	src: url("../assets/fonts/JosefinSans-Bold.ttf"); 
+}
+
+body {
+	min-width:350px;
+}
+
+.angryText {
+	font-family: "Indelible";
+}
+
+.professionalText {
+	font-family: "JosefinSans";
+}
+
+.professionalTextBold {
+	font-family: "JosefinSansBold";
+}
