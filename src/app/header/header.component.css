@@ -1,29 +1,33 @@
 #header {
-	/*border-bottom: 1px solid #000;
-	margin-top: -15px;
-	position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;*/
+
 }
 
 #title {
-	border: 1px solid #000;
-	/*font-size: 32px;
-	min-width: 33%;
-	max-width: 300px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: -9px;
-	text-align: center;
-	height: 63px;
-	align-content: center;
-	background-color: #fff;*/
+	position: relative;
+
+
 }
 
 #title p {
 	margin-top: 16px;
 }
+
+.header-triangle {
+
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: 160px solid transparent;
+	border-right: 160px solid transparent;
+	border-top: 60px solid #00f;
+
+    
+}
+
+
+
+
+
 
 #nav {
 	border-bottom: 1px solid #000;
@@ -43,4 +47,43 @@ nav ul li:hover {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start of large tablet styles */
+/*@media screen and (max-width: 991px) {
+
+}*/
+
+/* start of medium tablet styles */
+@media screen and (max-width: 767px) {
+    
+     .header-triangle {
+		/*border-left: 160px solid transparent;
+		border-right: 160px solid transparent;
+		border-top: 60px solid #00f;*/
+	}
+}
+
+/* start of phone styles */
+@media screen and (max-width: 360px) {
+
+}
 
