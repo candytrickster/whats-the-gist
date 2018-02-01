@@ -14,8 +14,17 @@
 	src: url("./assets/fonts/JosefinSans-Bold.ttf"); 
 }
 
+:root {
+	--grey: #e3dee2;
+	--dark-red: #660616;
+	--red: #800616;
+}
+
 body {
 	min-width:350px;
+	margin: 0px;
+	padding: 0px;
+	margin-top: -16px;
 }
 
 .angryText {
