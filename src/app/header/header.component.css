@@ -30,8 +30,10 @@
 }
 
 #nav {
-	border: 1px solid #000;
-    margin-top: -92px;
+    position: relative;
+    margin-top: -76px;
+    width: 246px;
+    margin-left: auto;
 }
 
 nav ul {
@@ -41,10 +43,14 @@ nav ul {
 nav ul li {
 	font-family: "JosefinSans";
 	display: inline;
+	margin-right: 20px;
+	color: var(--red);
 }
 
 nav ul li:hover {
-
+	color: var(--dark-red);
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 
