@@ -12,8 +12,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  myFunction() {
-  	console.log("hi");
+  showMenu() {
 	var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
