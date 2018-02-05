@@ -29,30 +29,40 @@
 	border-top: 120px solid var(--red);
 }
 
-#nav {
-    position: relative;
-    margin-top: -76px;
-    width: 246px;
+.topnav {
+  	position: relative;
+    margin-top: -88px;
+    width: 258px;
     margin-left: auto;
 }
 
-nav ul {
-	list-style: none;
-}
-
-nav ul li {
+.topnav a {
+	float: left;
+	text-align: center;
+	padding: 12px 16px;
 	font-family: "JosefinSans";
-	display: inline;
-	margin-right: 20px;
 	color: var(--red);
+	text-decoration: none;
 }
 
-nav ul li:hover {
+.topnav a:hover {
 	color: var(--dark-red);
 	text-decoration: underline;
 	cursor: pointer;
 }
 
+#empty {
+	pointer-events: none;
+}
+
+.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.topnav .icon {
+	display: none;
+}
 
 
 
@@ -66,6 +76,129 @@ nav ul li:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1080px) {
+
+	.header-triangle {
+		border-left: 300px solid transparent;
+		border-right: 300px solid transparent;
+		border-top: 120px solid var(--red);
+	}
+
+}
+
+@media screen and (max-width: 912px) {
+
+	#title p {
+		width: 195px;
+		margin-top: -90px;
+	    /*font-size: 33px;*/
+	}
+
+	.header-triangle {
+		border-left: 200px solid transparent;
+		border-right: 200px solid transparent;
+		border-top: 120px solid var(--red);
+	}
+
+	.topnav {
+	    margin-top: -109px;
+	}
+
+}
+
+@media screen and (max-width: 735px) {
+
+	#title p {
+		width: 167px;
+		margin-top: -86px;
+	    font-size: 29px;
+	    position: relative;
+		z-index: 1000;
+	}
+
+	.header-triangle {
+		border-left: 150px solid transparent;
+		border-right: 150px solid transparent;
+		border-top: 120px solid var(--red);
+		position: relative;
+		z-index: 1000;
+	}
+
+	.topnav {
+	    margin-top: -101px;
+	}
+
+}
+
+@media screen and (max-width: 660px) {
+
+	.topnav {
+		width: 148px;
+		background-color: var(--grey);
+		margin-top: -105px;
+	}
+
+	.topnav a {display: none;}
+	.topnav a.icon {
+		font-size: 31px;
+		float: right;
+		display: block;
+		margin-top: -9px;
+		padding-bottom: 8px;
+
+	}
+
+	.topnav a.icon:hover {
+		text-decoration: none;
+	}
+
+	.topnav.responsive {
+		position: relative;
+	}
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: right;
+	}
+
+	.topnav a:hover {
+		background-color: var(--dark-red);
+		color: var(--grey);
+		text-decoration: none;
+	}
+
+	#empty {
+		height: 28px;
+	}
+
+}
 
 
 
