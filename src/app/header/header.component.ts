@@ -12,26 +12,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  hideBigNav() {
-
-  }
-
-  hideSmallNav() {
-
-  }
-
-  showSmallNav() {
-
-  }
-
-  showBigNav() {
-
-  }
-
-  showMenuIconAnime(x) {
-  	x.classList.toggle("change");
-  }
-
   myFunction() {
   	console.log("hi");
 	var x = document.getElementById("myTopnav");
@@ -41,19 +21,4 @@ export class HeaderComponent implements OnInit {
         x.className = "topnav";
     }
   }
-
- //  $scope.myFunction = function()
-	// {
-	// 	console.log("hi");
-	// 	var x = document.getElementById("myTopnav");
-	// 	if (x.className === "topnav") {
-	// 		x.className += " responsive";
-	// 	} else {
-	// 		x.className = "topnav";
-	// 	}
-	// }
-
-
-
-
 }
