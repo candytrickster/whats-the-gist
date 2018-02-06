@@ -3,22 +3,10 @@
 	margin: 0px;
 	padding: 0px;
 	height: 50px;
-	box-shadow: 0px 4px #898989;
+	box-shadow: 0px 4px 8px #000;
+	position: relative;
+	z-index: 1000;
 }
-
-
-#title {
-	font-size: 24px;
-}
-
-#tagline {
-	
-}
-
-
-
-
-
 
 .topnav {
   	position: relative;
@@ -56,6 +44,55 @@
 	display: none;
 }
 
+#title {
+	font-size: 60px;
+	margin-top: -355px;
+	color: var(--grey);
+	text-align: center;
+}
+
+#tagline {
+	color: var(--grey);
+	text-align: center;
+	font-size: 19px;
+	margin-top: -57px;
+}
+
+#red-triangle {
+	width: 0px;
+	height: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: 50vw solid transparent;
+	border-right: 50vw solid transparent;
+	border-top: 400px solid var(--red);
+}
+
+#grey-diamond {
+	width: 0;
+	height: 0;
+	border: 250px solid transparent;
+	border-bottom-color: var(--grey);
+	position: relative;
+	top: -245px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#grey-diamond::after {
+	content: '';
+	position: absolute;
+	left: -250px;
+	top: 250px;
+	width: 0;
+	height: 0;
+	border: 250px solid transparent;
+	border-top-color: var(--grey);
+}
+
+
+
+
 
 
 
@@ -65,17 +102,76 @@
 
 @media screen and (max-width: 1080px) {
 
+	#grey-diamond {
+		border: 225px solid transparent;
+		border-bottom-color: var(--grey);
+		position: relative;
+		top: -220px;
+	}
+
+	#grey-diamond::after {
+		content: '';
+		position: absolute;
+		left: -225px;
+		top: 225px;
+		width: 0;
+		height: 0;
+		border: 225px solid transparent;
+		border-top-color: var(--grey);
+	}
+
 }
 
 @media screen and (max-width: 912px) {
 
-	
+	#grey-diamond {
+		border: 200px solid transparent;
+		border-bottom-color: var(--grey);
+		position: relative;
+		top: -195px;
+	}
+
+	#grey-diamond::after {
+		content: '';
+		position: absolute;
+		left: -200px;
+		top: 200px;
+		width: 0;
+		height: 0;
+		border: 200px solid transparent;
+		border-top-color: var(--grey);
+	}
 
 }
 
-@media screen and (max-width: 735px) {
+@media screen and (max-width: 750px) {
 
-	
+	#title {
+		font-size: 56px;
+	}
+
+	#tagline {
+		font-size: 16px;
+		/*margin-top: -47px;*/
+	}
+
+	#grey-diamond {
+		border: 175px solid transparent;
+		border-bottom-color: var(--grey);
+		position: relative;
+		top: -154px;
+	}
+
+	#grey-diamond::after {
+		content: '';
+		position: absolute;
+		left: -175px;
+		top: 175px;
+		width: 0;
+		height: 0;
+		border: 175px solid transparent;
+		border-top-color: var(--grey);
+	}
 
 }
 

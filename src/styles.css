@@ -14,6 +14,11 @@
 	src: url("./assets/fonts/JosefinSans-Bold.ttf"); 
 }
 
+@font-face { 
+	font-family: "JosefinSansLight"; 
+	src: url("./assets/fonts/JosefinSans-Light.ttf"); 
+}
+
 :root {
 	--grey: #e3dee2;
 	--dark-red: #660616;
@@ -39,3 +44,6 @@ body {
 	font-family: "JosefinSansBold";
 }
 
+.professionalTextLight {
+	font-family: "JosefinSansLight";
+}
