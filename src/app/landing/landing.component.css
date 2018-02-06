@@ -94,6 +94,45 @@
 	border-top-color: var(--grey);
 }
 
+#typing-text {
+	position: relative;
+	z-index: 1000;
+	font-size: 40px;
+	width: 75vw;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin-top: -315px;
+}
+
+button {
+	/*position: fixed;*/
+	background-color: var(--dark-red);
+	color: var(--grey);
+	font-size: 30px;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+#button {
+	position: relative;
+	z-index: 1000;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -50px;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1080px) {
 
 	#grey-diamond {
@@ -307,6 +346,27 @@
 	#newline {
 		display: block;
 	}
+
+	#grey-diamond {
+		border: 150px solid transparent;
+		border-bottom-color: var(--grey);
+		position: relative;
+		top: -157px;
+	}
+
+	#grey-diamond::after {
+		content: '';
+		position: absolute;
+		left: -150px;
+		top: 150px;
+		width: 0;
+		height: 0;
+		border: 150px solid transparent;
+		border-top-color: var(--grey);
+	}
+
+
+
 
 }
 
