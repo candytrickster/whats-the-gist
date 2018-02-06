@@ -68,6 +68,10 @@
 	border-top: 400px solid var(--red);
 }
 
+#mobile-red-triangle {
+	display: none;
+}
+
 #grey-diamond {
 	width: 0;
 	height: 0;
@@ -89,16 +93,6 @@
 	border: 250px solid transparent;
 	border-top-color: var(--grey);
 }
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 1080px) {
 
@@ -159,7 +153,7 @@
 		border: 175px solid transparent;
 		border-bottom-color: var(--grey);
 		position: relative;
-		top: -154px;
+		top: -157px;
 	}
 
 	#grey-diamond::after {
@@ -221,4 +215,117 @@
 		height: 20px;
 	}
 
+	#red-triangle {
+		display: none;
+	}
+
+	#mobile-red-triangle {
+		position: relative;
+		z-index: -1;
+	    display: inline-block;
+	    height: 120px; 
+	    min-width:100%;
+	    background: var(--red);
+	    line-height: 50px;
+	    padding-bottom:30%;
+	    background-clip:content-box;
+	    overflow:hidden;
+	}
+
+	#mobile-red-triangle::after {
+		content: "";
+	    position: absolute;
+	    top:120px; 
+	    left: 0;
+	    background-color:inherit;
+	    padding-bottom:50%; 
+	    width:57.7%;
+	    z-index:-1;
+	    
+	    -webkit-transform-origin:0 0;
+	    -ms-transform-origin:0 0;
+	    transform-origin:0 0;
+	    
+	    -webkit-transform: rotate(-30deg) skewX(30deg);;
+	    -ms-transform: rotate(-30deg) skewX(30deg);
+	    transform: rotate(-30deg) skewX(30deg);
+	}
+
+	#title {
+		margin-top: -284px;
+	}
 }
+
+@media screen and (max-width: 619px) {
+	#title {
+		margin-top: -274px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	#title {
+		margin-top: -264px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	#title {
+		margin-top: -254px;
+	}
+}
+
+@media screen and (max-width: 505px) {
+	#title {
+		margin-top: -244px;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	#title {
+		margin-top: -234px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	#title {
+		margin-top: -224px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	#title {
+		margin-top: -214px;
+		font-size: 48px;
+	}
+
+	#tagline {
+		font-size: 18px;
+		margin-top: -43px;
+	    line-height: 1.4;
+	}
+
+	#newline {
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 380px) {
+	#title {
+		margin-top: -204px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
