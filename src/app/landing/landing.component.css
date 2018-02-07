@@ -102,7 +102,7 @@
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
-	margin-top: -315px;
+	margin-top: -350px;
 }
 
 button {
@@ -153,6 +153,10 @@ button {
 		border-top-color: var(--grey);
 	}
 
+	#typing-text {
+		margin-top: -321px;
+	}
+
 }
 
 @media screen and (max-width: 912px) {
@@ -173,6 +177,10 @@ button {
 		height: 0;
 		border: 200px solid transparent;
 		border-top-color: var(--grey);
+	}
+
+	#typing-text {
+		margin-top: -292px;
 	}
 
 }
@@ -204,6 +212,10 @@ button {
 		height: 0;
 		border: 175px solid transparent;
 		border-top-color: var(--grey);
+	}
+
+	#typing-text {
+		margin-top: -263px;
 	}
 
 }
@@ -293,6 +305,10 @@ button {
 	#title {
 		margin-top: -284px;
 	}
+
+	#typing-text {
+		width: 90vw;
+	}
 }
 
 @media screen and (max-width: 619px) {
@@ -328,6 +344,11 @@ button {
 @media screen and (max-width: 440px) {
 	#title {
 		margin-top: -224px;
+	}
+
+	#typing-text {
+		font-size: 30px;
+		margin-top: -245px;
 	}
 }
 
