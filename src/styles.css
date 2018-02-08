@@ -33,17 +33,21 @@ body {
 }
 
 .angryText {
-	font-family: "Indelible";
+	font-family: "JosefinSansBold";
+	text-transform: uppercase;
 }
 
 .professionalText {
 	font-family: "JosefinSans";
+	text-transform: none;
 }
 
 .professionalTextBold {
 	font-family: "JosefinSansBold";
+	text-transform: none;
 }
 
 .professionalTextLight {
 	font-family: "JosefinSansLight";
+	text-transform: none;
 }

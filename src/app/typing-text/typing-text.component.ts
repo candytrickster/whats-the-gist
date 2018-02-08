@@ -55,15 +55,15 @@ export class TypingTextComponent implements OnInit {
 		} else {
 			if(that.typewriter_text == that.messages[that.typewriter_index].angryMsg) {
 				that.typewriter_text = that.messages[that.typewriter_index].proMsg;
-				element.classList.add("professionalTextBold");
+				element.classList.add("professionalText");
 			} else if(that.typewriter_index < that.messages.length - 1) {
 				that.typewriter_index += 1;
 				that.typewriter_text = that.messages[that.typewriter_index].angryMsg;
-				element.classList.remove("professionalTextBold");
+				element.classList.remove("professionalText");
 			} else {
 				that.typewriter_index = 0;
 				that.typewriter_text = that.messages[that.typewriter_index].angryMsg;
-				element.classList.remove("professionalTextBold");
+				element.classList.remove("professionalText");
 			}
 			that.typingCallback(that);
 		}
