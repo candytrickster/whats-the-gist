@@ -1,4 +1,5 @@
 import { Component, OnInit, Directive, ElementRef, Renderer } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,7 @@ import { Component, OnInit, Directive, ElementRef, Renderer } from '@angular/cor
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor( private router: Router ) { }
 
   ngOnInit() {
   }
@@ -20,4 +21,13 @@ export class HeaderComponent implements OnInit {
         x.className = "topnav";
     }
   }
+
+  goToDonate() {
+    this.router.navigateByUrl('/');
+  }
+  
+  goToContact() {
+    this.router.navigateByUrl('/');
+  }
+
 }

@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { TypingTextComponent } from './typing-text/typing-text.component';
@@ -14,9 +13,16 @@ import { SchoolComponent } from './school/school.component';
 import { FreelanceComponent } from './freelance/freelance.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { FirstQuestionComponent } from './first-question/first-question.component';
+
+import { AppRoutingModule }     from './app-routing.module';
 
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
   declarations: [
     AppComponent,
     LandingComponent,
@@ -25,10 +31,8 @@ import { FooterComponent } from './footer/footer.component';
     SchoolComponent,
     FreelanceComponent,
     HeaderComponent,
-    FooterComponent
-  ],
-  imports: [
-    BrowserModule
+    FooterComponent,
+    FirstQuestionComponent
   ],
   providers: [LandingService, WorkService, SchoolService, FreelanceService],
   bootstrap: [AppComponent]
