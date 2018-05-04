@@ -25,6 +25,11 @@
 	--red: #800616;
 }
 
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+
 body {
 	min-width:360px;
 	margin: 0px;
@@ -51,3 +56,57 @@ body {
 	font-family: "JosefinSansLight";
 	text-transform: none;
 }
+
+.main {
+	height: 100vh;
+	text-align: center;
+	margin-top: -20px;
+}
+
+.main .title {
+	padding-top: 85px;
+	color: var(--dark-red);
+	font-size: 42px;
+}
+
+.main .questions p {
+	padding: 15px 0px 15px 0px;
+	background-color: var(--grey);
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	color: var(--red);
+	font-size: 35px;
+}
+
+.main .questions p:nth-child(odd) {
+	background-color: var(--dark-red);
+	color: var(--grey);
+}
+
+@media screen and (max-width: 1080px) {
+
+}
+
+@media screen and (max-width: 912px) {
+	
+}
+
+@media screen and (max-width: 735px) {
+
+}
+
+@media screen and (max-width: 660px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
