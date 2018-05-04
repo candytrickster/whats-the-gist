@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-first-question',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstQuestionComponent implements OnInit {
 
-  constructor() { }
+  constructor( private router: Router ) { }
 
   ngOnInit() {
+  }
+
+  freelanceClicked() {
+    this.router.navigateByUrl('/freelance');
+  }
+
+  officeClicked() {
+    this.router.navigateByUrl('/office');
+  }
+
+  schoolClicked() {
+    this.router.navigateByUrl('/school');
+  }
+
+  miscClicked() {
+    this.router.navigateByUrl('/miscellaneous');
   }
 
 }

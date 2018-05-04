@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FirstQuestionComponent } from './first-question/first-question.component';
 
 import { AppRoutingModule }     from './app-routing.module';
+import { MiscComponent } from './misc/misc.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { AppRoutingModule }     from './app-routing.module';
     FreelanceComponent,
     HeaderComponent,
     FooterComponent,
-    FirstQuestionComponent
+    FirstQuestionComponent,
+    MiscComponent
   ],
   providers: [LandingService, WorkService, SchoolService, FreelanceService],
   bootstrap: [AppComponent]
