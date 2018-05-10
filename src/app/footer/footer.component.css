@@ -1,0 +1,16 @@
+#footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	height: 50px;
+	background-color: var(--grey);
+	text-align: center;
+	color: var(--red);
+	box-shadow: 0px -4px 0px var(--red);
+}
+
+#footer a {
+	text-decoration: none;
+  	color: var(--red);
+}
