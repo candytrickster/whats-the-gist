@@ -22,12 +22,11 @@
 	height: 0px;
 	margin-left: auto;
 	margin-right: auto;
-	border-left: 30vw solid transparent;
+	border-left: 30vw solid transparent;        
 	border-right: 30vw solid transparent;
 	border-top: 120px solid var(--red);
 }
 
-/*400*/
 .topnav {
   	position: relative;
     margin-top: -88px;
@@ -164,12 +163,6 @@
 	}
 
 }
-
-
-
-
-
-
 
 
 /* start of large tablet styles */
